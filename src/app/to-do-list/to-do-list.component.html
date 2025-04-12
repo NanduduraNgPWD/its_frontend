@@ -4,7 +4,12 @@
 
         <input [formControl]="item" type="text" name="todoitem" class="border rounded-md">
 
-        <button class="bg-blue-400 p-2 text-white" type="button" (click)="pushToList()">Add</button>
+        <button class="bg-blue-400 p-2 text-white" type="button" (click)="pushToList()">Add to List</button>
+
+
+        <button class="bg-green-400 p-2 text-white" type="button" (click)="saveList()">Save List</button>
+
+
     </form>
     <ol class="h-52 w-24  flex flex-col items-center justify-center">
         <p>List:</p>
@@ -12,5 +17,6 @@
         <li key={item}> {{item}}</li>
         }
     </ol>
+
 
 </div>
